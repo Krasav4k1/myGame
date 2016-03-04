@@ -50,11 +50,10 @@ public class Noise {
     public void lookHit(){
         if(Math.abs(noiseXD - GamePanel.bird.getBirdX()) <=  GamePanel.bird.getWigth() + (GamePanel.bird.getHeigth() / 2) / 2 - 10
                 && Math.abs(noiseYD - GamePanel.bird.getBirdY()) <= heigth / 3 + 25  + GamePanel.bird.getWigth() + (GamePanel.bird.getHeigth() / 2) / 2){
-            System.out.println("Hit");
         }
         if(Math.abs(noiseXU - GamePanel.bird.getBirdX()) <=  GamePanel.bird.getWigth() + (GamePanel.bird.getHeigth() / 2) / 2 - 10
                 && Math.abs(noiseYU - GamePanel.bird.getBirdY()) <= heigth / 3 + 25  + GamePanel.bird.getWigth() + (GamePanel.bird.getHeigth() / 2) / 2){
-            System.out.println("Hit");
+
         }
 
     }
