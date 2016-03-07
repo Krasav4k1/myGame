@@ -90,7 +90,7 @@ public class Bird implements Runnable{
 
 
 
-    //Functions working whis GamePanel Thread
+    //Functions working wthis GamePanel Thread
     public void update() {
         timeDown();
 
