@@ -12,6 +12,7 @@ public class GamePanel extends JPanel implements Runnable{
     public static int wigth = 600;
     public static int heigth = 700;
 
+
                     //Objects
 
     public Thread thread;
@@ -33,6 +34,7 @@ public class GamePanel extends JPanel implements Runnable{
     //Constructor
     public GamePanel(){
         super();
+        System.out.println("Hello");
         setFocusable(true);
         requestFocus();
 
