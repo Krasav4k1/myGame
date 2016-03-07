@@ -68,22 +68,22 @@ public class Bird implements Runnable{
     }
 
     public void move(){
-
-        if(up){
-            birdY -= speed;
-            image = new ImageIcon("birdForFlappyBirdUp.png").getImage();
-        } else {
-            birdY +=speed;
-            image = new ImageIcon("birdForFlappyBirdDown.png").getImage();
+        if(GamePanel.statys.equals(GamePanel.STATYS.PLAY)) {
+            if (up) {
+                birdY -= speed;
+                image = new ImageIcon("birdForFlappyBirdUp.png").getImage();
+            } else {
+                birdY += speed;
+                image = new ImageIcon("birdForFlappyBirdDown.png").getImage();
+            }
+            if (birdY <= 0) {
+                up = false;
+            }
+            if (birdY >= GamePanel.heigth) {
+                JOptionPane.showMessageDialog(null, "You lose");
+                GamePanel.statys = GamePanel.STATYS.MENU;
+            }
         }
-        if(birdY <= 0){
-            up = false;
-        }
-        if(birdY >= GamePanel.heigth) {
-            JOptionPane.showMessageDialog(null,"You lose");
-            System.exit(0);
-        }
-
     }
 
 
