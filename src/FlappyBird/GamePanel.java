@@ -34,7 +34,6 @@ public class GamePanel extends JPanel implements Runnable{
     //Constructor
     public GamePanel(){
         super();
-        System.out.println("Hello");
         setFocusable(true);
         requestFocus();
 
