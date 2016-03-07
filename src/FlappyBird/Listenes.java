@@ -17,6 +17,9 @@ public class Listenes implements KeyListener{
                 GamePanel.bird.stoppress = false;
             }
         }
+        if(key == KeyEvent.VK_ENTER){
+            GamePanel.statys = GamePanel.STATYS.PLAY;
+        }
     }
 
     @Override
