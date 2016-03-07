@@ -27,7 +27,7 @@ public class GamePanel extends JPanel implements Runnable{
     private double millisToFPS;
     private long timerFPS;
     private int sleepTime;
-    public enum STATYS {MENU,PLAY};
+    public enum STATYS {MENU,PLAY}
     public static STATYS statys = STATYS.MENU;
 
     //Constructor
@@ -38,6 +38,7 @@ public class GamePanel extends JPanel implements Runnable{
 
         addKeyListener(new Listenes());
     }
+
 
     //Functions
     public void start(){
@@ -58,7 +59,7 @@ public class GamePanel extends JPanel implements Runnable{
 
         background = new BackGameBackground();
         bird = new Bird();
-        noises = new ArrayList<Noise>();
+        noises = new ArrayList<>();
 
         noises.add(new Noise());
 
